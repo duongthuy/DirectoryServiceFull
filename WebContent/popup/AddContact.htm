@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="content-type" content="text/html" />
+<meta name="author" content="Longka" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <script type="text/javascript" src="../js/jquery-1.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.tablesorter.js"></script>
+	<script type="text/javascript" src="../js/jquery.tablesorter.pager.js"></script>
+ <title>Add Contacts</title>
+<script>
+        $(document).ready(function(){
+                $('#menuitem > li > a').click(function(){
+                         if ($(this).attr('class') != 'active'){
+                                $('#menuitem li ul').slideUp();
+                                $(this).next().slideToggle();
+                                $('#menuitem li a').removeClass('active');
+                                $(this).addClass('active');
+                        }
+                });
+        });
+</script>
+
+	
+<body>
+<div id="wapper_page">
+<!-- header div -->
+<div id="header">
+<div class="logo">
+<h1>Services Directory</h1>
+</div>
+</div> <!-- end header div -->
+<!-- main_content -->
+<div id="main_content">
+<!-- menubar-->
+<div id="menubar">
+<h2>Menu Items</h2>
+<ul id="menuitem">
+<li><a href="#">Organisation</a></li>
+<li class="service"><a href="#">Services</a>
+<ul>
+<li><a href="#">Programme Maintenance</a></li>
+<li><a href="#">Service Maintenance</a></li>
+</ul>
+</li>
+<li class="geo"><a href="#">Geography</a>
+<ul>
+<li><a href="#">Trust Regions/Trust Districts Maintenances</a></li>
+<li><a href="#">Government Office Region</a></li>
+</ul>
+</li>
+<li><a href="#">Premises</a></li>
+<li><a href="#">Contacts</a>
+<ul>
+<li><a href="ListContact.htm">List Contacts</a></li>
+</ul>
+</li>    
+</ul>
+</div>
+<!--end menubar-->
+<!--showcontent-->
+<div id="showcontent">
+<h1>Add Contact</h1>
+        <div class="tablecontain" >
+        <table>
+        <tr>
+        <td class="style3">First Name *</td>
+        <td class="style2"><input type="text" /></td>
+        <td class="style1"></td>
+        <td class="style3">Manager Name</td>
+        <td><input type="text" />
+        <a href="" >Lookup</a></td>
+        </tr>
+        <tr>
+        <td class="style3">Surname *</td>
+        <td class="style2"><input type="text" /></td>
+        <td class="style1"></td>
+        <td class="style3">Contact Type *</td>
+        <td>
+        <select id="country" >
+                    <option>-Select Type-</option>
+                    <option>Operational</option>
+                    <option>Fire Mashall</option>
+                    </select>
+        </td>
+        </tr>
+        <tr>
+        <td class="style3">Know As</td>
+        <td class="style2"><input type="text" /></td>
+        <td class="style1"></td>
+        <td class="style3">Best Contact Method</td>
+        <td>
+        <select id="Select1">
+                    <option>-Select Method-</option>
+                    <option></option>
+                    <option></option>
+                    </select>
+        </td>
+        </tr>
+        <tr>
+        <td class="style3">Office Phone</td>
+        <td class="style2"><input type="text" /></td>
+        <td class="style1"></td>
+        <td class="style3">Job Role</td>
+        <td><input type="text" /></td>
+        </tr>
+        <tr>
+        <td class="style3">Mobile Phone</td>
+        <td class="style2"><input type="text" /></td>
+        <td class="style1"></td>
+        <td class="style3">Work Base</td>
+        <td><input type="text" /></td>
+        </tr>
+        <tr>
+        <td class="style3">ST Home Phone</td>
+        <td class="style2"><input type="text" /></td>
+        <td class="style1"></td>
+        <td class="style3">Job Title</td>
+        <td><input type="text" /></td>
+        </tr>
+        <tr>
+        <td class="style3">Email Address</td>
+        <td class="style2"><input type="text" /></td>
+        <td class="style1"></td>
+        <td class="style3">Is Active?</td>
+        <td><input type="checkbox" /></td>
+        </tr>
+        </table>
+        </div>
+        <div class="addpagebutton">
+        <input type="button" value="Save" />
+        <input type="button" value="Back" />
+        </div>
+</div>
+<!--end showcontent-->
+</div><!-- end main_content-->
+<!-- footer-->
+<div id="footer">
+<h1 style="text-align: center;">Copyright LongLee</h1>
+</div><!-- end footer-->
+</div><!--end wapper_page -->
+
+</body>
+</html>

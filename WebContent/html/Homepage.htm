@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="content-type" content="text/html" />
+<meta name="author" content="Longka" />
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<title>Home page</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script>
+$(document).ready(function(){
+$('#menuitem > li > a').click(function(){
+if ($(this).attr('class') != 'active'){
+$('#menuitem li ul').slideUp();
+$(this).next().slideToggle();
+$('#menuitem li a').removeClass('active');
+$(this).addClass('active');
+}
+});
+});
+</script>
+</head>
+
+<body>
+<div id="wapper_page">
+<!-- header div -->
+<div id="header">
+<div class="logo">
+<h1>Services Directory</h1>
+</div>
+<!-- usersection -->
+<div id="usersection">
+<ul>
+<li><a href="LoginPage.htm">Logout</a></li>
+<li><a href="#">Profile</a></li>
+<li><h2>userdefault</h2></li>
+</ul>
+</div>
+<!-- end usersection-->
+</div>
+<!-- end header div -->
+<!-- main_content -->
+<div id="main_content">
+<!-- menubar-->
+<div id="menubar">
+<h2>Menu Items</h2>
+<ul id="menuitem">
+<li><a href="#">Organisation</a></li>
+<li class="service"><a href="#">Services</a>
+<ul>
+<li><a href="ProgrammeList.htm">Programme Maintenance</a></li>
+<li><a href="#">Service Maintenance</a></li>
+</ul>
+</li>
+<li class="geo"><a href="#">Geography</a>
+<ul>
+<li><a href="ListGovernment.htm">Trust Regions/Trust Districts Maintenances</a></li>
+<li><a href="#">Government Office Region</a></li>
+</ul>
+</li>
+<li><a href="#">Premises</a></li>
+<li><a href="#">Contacts</a>
+<ul>
+<li><a href="ListContact.htm">List Contacts</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<!--end menubar-->
+<!--main_content-->
+<div id="main_content">
+
+</div><!-- end main_content-->
+<!-- footer-->
+<div id="footer">
+<h1>Copyright LongLee</h1>
+</div><!-- end footer-->
+</div><!--end wapper_page -->
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="content-type" content="text/html" />
+<meta name="author" content="Longka" />
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<title>Login page</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script>
+$(document).ready(function(){
+$('#menuitem > li > a').click(function(){
+if ($(this).attr('class') != 'active'){
+$('#menuitem li ul').slideUp();
+$(this).next().slideToggle();
+$('#menuitem li a').removeClass('active');
+$(this).addClass('active');
+}
+});
+});
+</script>
+
+<body>
+<div id="wapper_page">
+<!-- header div -->
+<div id="header">
+<!-- logo div -->
+<div class="logo">
+<h1>Services Directory</h1>
+</div>
+<!-- end logo div -->
+<!-- usersection -->
+<div id="usersection">
+<ul>
+<li><a href="LoginPage.htm">Login</a></li>
+</ul>
+</div>
+<!-- end usersection-->
+</div>
+<!-- end header div -->
+<!-- main_content -->
+<div id="main_content">
+<!--Loginform-->
+<div id="loginform">
+<form action="Homepage.htm" method="post">
+<!-- Top -->
+<div id="toplogin">
+<h1>Login</h1>
+<table class="userpass">
+<tr>
+<td>User Name</td>
+<td></td>
+<td><input type="text" size="20"/></td>
+</tr>
+<tr>
+<td>Password</td>
+<td></td>
+<td><input type="password" size="20"/></td>
+</tr>
+</table>
+<div class="checkbox">
+<input type="checkbox" />Save password<a href="RetrievePassword.htm">Forgot Password?</a>
+</div>
+<div class="logonbutton">
+<input type="submit" value="Logon" />
+</div>
+</div>
+<!-- End Top -->
+</form>
+<!-- Bottom -->
+<div id="bottom">
+<h1>Welcome you !</h1>
+</div>
+<!-- End Bottom-->
+</div>
+<!-- end Loginform-->
+</div><!-- end main_content-->
+<!-- footer-->
+<div id="footer">
+<h2>Copyright by ...</h2>
+</div><!-- end footer-->
+</div><!--end wapper_page -->
+
+</body>
+</html>
